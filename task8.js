@@ -1,5 +1,7 @@
 function numberToTime(number){
-    number % 60 == 1 ? minutes = 'minute' : minutes = 'minutes';
+    let minutes =''
+    let hourly = ''
+    number % 60 === 1 ? minutes = 'minute' : minutes = 'minutes';
 
     if (number < 60){
         time = `${number} ${minutes}`
@@ -13,4 +15,4 @@ function numberToTime(number){
 
 }
 
-numberToTime(1);
+numberToTime(121);
